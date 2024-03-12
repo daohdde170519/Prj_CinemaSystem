@@ -17,17 +17,16 @@ public class LichChieu {
     private LocalTime gioChieu;
     private int maPhim;
     private int maPhong;
+    private String status;
     
 
-    public LichChieu() {
-    }
-
-    public LichChieu(int maXuatChieu, Date ngayChieu, LocalTime gioChieu, int maPhim, int maPhong) {
+    public LichChieu(int maXuatChieu, Date ngayChieu, LocalTime gioChieu, int maPhim, int maPhong, String status) {
         this.maXuatChieu = maXuatChieu;
         this.ngayChieu = ngayChieu;
         this.gioChieu = gioChieu;
         this.maPhim = maPhim;
         this.maPhong = maPhong;
+        this.status = status;
     }
 
     public LichChieu(Date ngayChieu, LocalTime gioChieu, int maPhim, int maPhong) {
@@ -76,4 +75,16 @@ public class LichChieu {
     public void setMaPhong(int maPhong) {
         this.maPhong = maPhong;
     }
+    
+    public LichChieu() {
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
 }
